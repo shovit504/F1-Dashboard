@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Dashboard</title>
+    <link rel="shortcut icon" type="image/png" href="png-transparent-mercedes-amg-petronas-f1-team-2018-fia-formula-one-world-championship-abu-dhabi-grand-prix-logo-red-bull-racing-f1-logo-angle-text-rectangle-thumbnail.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="assets/F1_logo.svg">
+        <h1>Formula 1 Dashboard</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="visualization" id="viz1">
+                <h2>Driver Standings</h2>
+                <select id="year-dropdown"></select>
+                <div id="tooltip1" class="hidden"></div>
+                <svg id="bar-chart"></svg>
+            </div>
+              
+            <div class="visualization" id="viz2">
+                <h2>Pit Stop Timings</h2>
+                <div id="tooltip"></div>
+                <svg id="bubble-chart"></svg>
+                <div id="tooltip-details"></div>
+            </div>
+    
+                <div class="visualization" id="viz3">
+                    <h2>F1 Driver and Constructor Championship Wins</h2>
+                    <div id="tooltip"></div>
+                </div>
+    
+                <div class="visualization" id="viz4">
+                    <h2>Weather Impact Tracker</h2>
+                    <select id="weather-year-dropdown"></select>
+                    <svg id="weather-heatmap"></svg>
+                </div>
+            </div>
+    
+            <div class="visualization-group">
+                <div class="visualization" id="viz5">
+                    <h2>Yearly F1 Race Circuits Map</h2>
+                    <div id="tooltip2"></div>
+                    
+                </div>
+    
+        
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Created with D3.js using Ergast API By Shovit</p>
+    </footer>
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="app.js"></script>
+    <script src="visualization1.js"></script>
+    <script src="visualization2.js"></script>
+    <script src="visualization3.js"></script>
+    <script src="visualization4.js"></script>
+    <script src="visualization5.js"></script>
+</body>
+</html>
